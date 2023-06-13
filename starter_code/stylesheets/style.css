@@ -1,3 +1,53 @@
+/* CSS Reset
+/* http://meyerweb.com/eric/tools/css/reset/ 
+/*   v2.0 | 20110126
+/*   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +58,185 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: #540B51;
+    line-height: 2rem;;
+    
+}
+
+img {
+    width: 100px;
+}
+
+.topNav ul {
+    display: none;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.topNav button img {
+    width: 15px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.header p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.orangeText {
+    color: #ECB12F;
+    font-weight: 400;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.imgContainer {
+    width: 200px; /* Set the width of the container to define the visible area */
+    height: 200px; /* Set the height of the container to define the visible area */
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.imgSlack {
+    position: relative;
+    margin-top: 50px;
+    clip: rect(100px, 200px, 300px, 100px); /* Crop the image by specifying the right side */
+    width: 800px; /* Let the image maintain its original width */
+    height: auto; /* Let the image maintain its original height */
+}
+
+.main {
+    background-color: #F3EAE2;
+}
+
+.references {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logos img {
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.imgChannels {
+    padding-top: 50px;
+    width: 90vw;
+}
+
+.imgChannelsM {
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgChannelsM img {
+    width: 90vw;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.textChannels {
+    padding: 20px;
+}
+
+.textChannels a {
+    text-decoration: none;
+    color: #2E71A6;
+}
+
+.textChannels a::after {
+    content: " →";
+}
+
+.sales {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.sales li {
+    padding: 20px;
+}
+
+.bigNo {
+    font-size: 3rem;
+    color:#540B51;
+    font-weight: 500;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+.tryout {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.tryout h3 {
+    color: white;
+    padding: 20px;
+}
+
+footer {
+    background-color: white;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomNav {
+    display: flex;
+    
+}
